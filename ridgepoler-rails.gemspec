@@ -1,15 +1,15 @@
 $LOAD_PATH.push File.expand_path('../lib', __FILE__)
 
 # Maintain your gem's version:
-require 'ridgepole/rails/version'
+require 'ridgepoler/rails/version'
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-  s.name        = 'ridgepole-rails'
-  s.version     = Ridgepole::Rails::VERSION
+  s.name        = 'ridgepoler-rails'
+  s.version     = Ridgepoler::Rails::VERSION
   s.authors     = ['Sho Kusano']
   s.email       = ['sho-kusano@space-pirates.jp']
-  s.homepage    = 'https://github.com/space-pirates-llc/ridgepole-rails'
+  s.homepage    = 'https://github.com/space-pirates-llc/ridgepoler-rails'
   s.summary     = 'Provides integration between ridgepole and rails 5 newer'
   s.description = s.summary
   s.license     = 'MIT'

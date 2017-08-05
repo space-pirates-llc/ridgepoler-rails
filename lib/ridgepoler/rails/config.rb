@@ -1,6 +1,6 @@
-require 'ridgepole/rails'
+require 'ridgepoler/rails'
 
-class Ridgepole::Rails::Config
+class Ridgepoler::Rails::Config
   def debug
     return @debug if instance_variable_defined?(:@debug)
 

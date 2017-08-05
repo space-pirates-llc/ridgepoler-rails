@@ -1,5 +1,5 @@
 Usage:
-    rails generate ridgepole NAME [field[:type][:index] field[:type][:index]] [options]
+    rails generate ridgepoler NAME [field[:type][:index] field[:type][:index]] [options]
 
 Example:
     rails generate news_model Thing

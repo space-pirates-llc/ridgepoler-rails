@@ -1,4 +1,4 @@
-# Ridgepole::Rails
+# Ridgepoler::Rails
 
 Provides integration between ridgepole and rails 5 newer.
 
@@ -7,7 +7,7 @@ Provides integration between ridgepole and rails 5 newer.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'ridgepole-rails'
+gem 'ridgepoler-rails'
 ```
 
 And then execute:
@@ -19,11 +19,11 @@ $ bundle exec rails generate ridgepole:install
 
 ## Generators
 
-Once installed, Ridgepole will generate migration files instead of ActiveRecord migration files when commands like `rails generate model` be used.
+Once installed, Ridgepoler will generate migration files instead of ActiveRecord migration files when commands like `rails generate model` be used.
 
 ## Rake tasks
 
-Ridgepole will replace or clear some db tasks. If you doesn't need that overrides, you can set `config.ridgepole.override_db_tasks = false`.
+Ridgepoler will replace or clear some db tasks. If you doesn't need that overrides, you can set `config.ridgepoler.override_db_tasks = false`.
 
 ### Clear tasks
 
@@ -44,7 +44,7 @@ Ridgepole will replace or clear some db tasks. If you doesn't need that override
 
 ## Contributing
 
-1. Fork it ( https://github.com/space-pirates-llc/ridgepole-rails/fork )
+1. Fork it ( https://github.com/space-pirates-llc/ridgepoler-rails/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)

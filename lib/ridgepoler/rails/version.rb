@@ -1,4 +1,4 @@
-module Ridgepole
+module Ridgepoler
   module Rails
     VERSION = '1.0.0'.freeze
   end

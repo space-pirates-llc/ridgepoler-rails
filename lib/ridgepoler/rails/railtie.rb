@@ -1,11 +1,11 @@
 require 'rails/railtie'
-require 'ridgepole/rails'
-require 'ridgepole/rails/config'
+require 'ridgepoler/rails'
+require 'ridgepoler/rails/config'
 
-class Ridgepole::Rails::Railtie < ::Rails::Railtie
+class Ridgepoler::Rails::Railtie < ::Rails::Railtie
   config.app_generators.orm :ridgepole
 
-  config.ridgepole = Ridgepole::Rails::Config.new
+  config.ridgepole = Ridgepoler::Rails::Config.new
 
   rake_tasks do
     load File.join(File.dirname(__FILE__), 'tasks', 'ridgepole.rake')

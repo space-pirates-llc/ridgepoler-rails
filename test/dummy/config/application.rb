@@ -11,7 +11,7 @@ require 'rails/test_unit/railtie'
 # require "sprockets/railtie"
 
 Bundler.require(*Rails.groups)
-require 'ridgepole/rails'
+require 'ridgepoler/rails'
 
 module Dummy
 end

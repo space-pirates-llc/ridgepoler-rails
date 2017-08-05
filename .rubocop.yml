@@ -43,7 +43,7 @@ Style/FileName:
   Exclude:
     - '**/Gemfile'
     - '**/Guardfile'
-    - 'lib/ridgepole-rails.rb'
+    - 'lib/ridgepoler-rails.rb'
 
 Style/RegexpLiteral:
   EnforcedStyle: percent_r
