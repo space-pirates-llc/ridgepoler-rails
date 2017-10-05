@@ -7,7 +7,7 @@ create_table :<%= table_name %><%= primary_key_type %>, force: :cascade do |t|
 <% elsif attribute.token? -%>
   t.string :<%= attribute.name %><%= attribute.inject_options %>
 <% else -%>
-  t.<%= attribute.type %> :<%= attribute.name %><%= attribute.inject_options %>
+  t.<%= attribute.type %> :<%= attribute.name %><%= options_for_attribute(attribute) %>
 <% end -%>
 <% end -%>
 <% if options[:timestamps] %>
