@@ -23,7 +23,7 @@ Once installed, Ridgepoler will generate migration files instead of ActiveRecord
 
 ## Rake tasks
 
-Ridgepoler will replace or clear some db tasks. If you doesn't need that overrides, you can set `config.ridgepoler.override_db_tasks = false`.
+Ridgepoler will replace or clear some db tasks. If you doesn't need that overrides, you can set `config.ridgepole.override_db_tasks = false`.
 
 ### Clear tasks
 
