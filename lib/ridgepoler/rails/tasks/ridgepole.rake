@@ -18,7 +18,14 @@ namespace :ridgepole do
   private
 
   def ridgepole(env: Rails.env, dry_run: false)
-    args = ['ridgepole', '-a', '-c', 'config/database.yml', '-E', env]
+    args = ['ridgepole', '-a']
+
+    if ENV['DATABASE_URL'].to_s.empty?
+      args << ['-c', 'config/database.yml', '-E', env]
+    else
+      args << ['-c', ENV['DATABASE_URL']]
+    end
+
     args.push('--dry-run') if dry_run
     args.push('--debug') if config.debug
     args.push('--verbose') if config.verbose
