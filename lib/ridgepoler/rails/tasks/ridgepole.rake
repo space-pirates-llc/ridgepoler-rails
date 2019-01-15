@@ -21,9 +21,9 @@ namespace :ridgepole do
     args = ['ridgepole', '-a']
 
     if ENV['DATABASE_URL'].to_s.empty?
-      args << ['-c', 'config/database.yml', '-E', env]
+      args += ['-c', 'config/database.yml', '-E', env]
     else
-      args << ['-c', ENV['DATABASE_URL']]
+      args += ['-c', ENV['DATABASE_URL']]
     end
 
     args.push('--dry-run') if dry_run
