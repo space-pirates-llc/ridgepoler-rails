@@ -1,4 +1,8 @@
+require:
+  - rubocop-rails
+
 AllCops:
+  NewCops: enable
   Include:
     - '**/Gemfile'
     - '**/Rakefile'
@@ -12,6 +16,7 @@ AllCops:
     - 'db/schema.rb'
     - 'node_modules/**/*'
     - 'lib/templates/**/*'
+    - 'test/dummy/bin/**/*'
   DisplayCopNames: true
 
 Rails:
@@ -20,7 +25,7 @@ Rails:
 Style/Alias:
   EnforcedStyle: prefer_alias_method
 
-Layout/AlignParameters:
+Layout/ParameterAlignment:
   EnforcedStyle: with_fixed_indentation
 
 Style/ClassAndModuleChildren:
@@ -39,7 +44,7 @@ Style/FrozenStringLiteralComment:
   Exclude:
     - '**/Gemfile'
 
-Style/FileName:
+Naming/FileName:
   Exclude:
     - '**/Gemfile'
     - '**/Guardfile'
@@ -53,9 +58,9 @@ Metrics/BlockLength:
   Exclude:
     - 'test/**/*'
     - 'spec/**/*'
-    - 'lib/tasks/**/*'
+    - 'lib/**/tasks/**/*'
 
-Metrics/LineLength:
+Layout/LineLength:
   Max: 240
 
 Metrics/MethodLength:
@@ -75,3 +80,6 @@ Rails/OutputSafety:
     - 'app/models/**/*'
     - 'test/models/**/*'
     - 'test/factories/**/*'
+
+Gemspec/RequiredRubyVersion:
+  Enabled: false
