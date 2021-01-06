@@ -23,8 +23,8 @@ namespace :db do
   end
 
   {
-    :migrate => 'ridgepole:apply',
-    :setup => 'ridgepole:setup',
+    migrate: 'ridgepole:apply',
+    setup: 'ridgepole:setup'
   }.each_pair do |new, old|
     alias_task(new, old)
   end
