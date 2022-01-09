@@ -9,8 +9,6 @@
   db:schema:dump
   db:schema:load
   db:setup
-  db:structure:dump
-  db:structure:load
   db:version
 ].each do |task|
   Rake::Task[task]&.clear
