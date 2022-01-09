@@ -13,7 +13,7 @@
   db:structure:load
   db:version
 ].each do |task|
-  Rake::Task[task].clear
+  Rake::Task[task]&.clear
 end
 
 namespace :db do
