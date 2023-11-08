@@ -12,7 +12,7 @@ module Rails
       end
 
       def create_migration_file
-        return unless options[:migration] && options[:parent].nil?
+        return if skip_migration_creation?
         attributes.each { |a| a.attr_options.delete(:index) if a.reference? && !a.has_index? } if options[:indexes] == false
 
         template 'schema.rb', File.join('db/schema', class_path, "#{file_name}.rb")
